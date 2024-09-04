@@ -124,7 +124,7 @@ class PhotoOrganizerGUI:
         for filename in file_list:
             file_path = os.path.join(source_folder, filename)
             
-            if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')) and self.photo_var.get():
+            if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.heic')) and self.photo_var.get():
                 date_taken = self.get_date_taken(file_path)
                 file_type = "photo"
             elif filename.lower().endswith(('.mp4', '.mov', '.avi', '.wmv')) and self.video_var.get():
